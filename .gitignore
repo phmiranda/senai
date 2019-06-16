@@ -1,0 +1,11 @@
+# comentário
+.idea/
+nbproject/
+.vscode/
+*.iml
+
+# comentário
+gen/
+target/
+out/
+
