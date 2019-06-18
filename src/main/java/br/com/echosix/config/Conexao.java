@@ -1,7 +1,14 @@
+// comentário
 package br.com.echosix.config;
 
-public class Connection {
-    public String conect(String conn){
-        return conn;
+public class Conexao {
+    // comentário
+    public String conectar(String conexao){
+        return conexao;
+    }
+
+    // comentário
+    public String desconectar(String conexao){
+        return conexao;
     }
 }

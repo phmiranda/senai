@@ -1,4 +1,7 @@
 package br.com.echosix.web;
 
-public class MainServlet {
+import javax.servlet.http.HttpServlet;
+
+public class MainServlet extends HttpServlet {
+
 }
