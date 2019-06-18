@@ -18,11 +18,16 @@ Texto
 **3. Instalação e Deploy**
 
 Realizar a instalação do Java JDK e do Maven, após as configurações iniciais de variáveis de ambiente para executar o java e o maven globalmente, execute os comandos abaixo:
-- mvn clean
-- mvn install
+
+execute o comando abaixo para limpar todas as dependências e garantir que não tenha algo corrompido.
+- `mvn clean`
+
+o comando abaixo irá realizar o download do repositório central do maven e instalar todas as dependências definidas no [pom][1]
+- `mvn install`
 
 Os comandos acima irão instalar as dependências do do projeto para que ele execute sem nenhum problema.
 
 **4. Correções**
 
 Para sugerir correções e melhorias, realize a abertura de uma issue no próprio repositório apontando as necessidades observadas pelos usuários na hora de testar o projeto.
+[1]: https://github.com/phmiranda/senai/blob/master/pom.xml "pom.xml"
