@@ -8,7 +8,7 @@
   <version>1.0.0</version>
   <packaging>war</packaging>
 
-  <name>API do Projeto Final</name>
+  <name>senai-api</name>
   <!-- FIXME change it to the project's website -->
   <url>https://api.senai.echosix.com.br/</url>
 
