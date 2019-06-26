@@ -1,17 +1,25 @@
 package br.com.senai.model.dto;
 
+import javax.persistence.*;
+
+@Entity
 public class Categoria {
     // atributos
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false ,updatable = false)
+    private Long id;
+    @Column(name = "nome", nullable = false)
     private String nome;
+    @Column(name = "descricao", nullable = true)
     private String descricao;
 
     // getters e setters
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
