@@ -1,11 +1,28 @@
 package br.com.senai.model.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Contato {
-    // atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false ,updatable = false)
     private Integer id;
+
+    @Column(name = "email", nullable = false)
     private String email;
+
+    @Column(name = "celular", nullable = false)
     private String celular;
+
+    @Column(name = "telefone", nullable = false)
     private String telefone;
+
+    @Column(name = "recado", nullable = false)
     private String recado;
 
     // getters e setters

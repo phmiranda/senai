@@ -1,9 +1,22 @@
 package br.com.senai.model.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class UnidadeFederativa {
-    // atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false ,updatable = false)
     private Integer id;
+
+    @Column(name = "unidade_federativa", nullable = false)
     private String unidadeFederativa;
+
+    @Column(name = "sigla", nullable = false)
     private String sigla;
 
     // getters e setters

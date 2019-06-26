@@ -1,13 +1,29 @@
 package br.com.senai.model.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class Usuario {
-    // atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false ,updatable = false)
     private Integer id;
+
+    @Column(name = "nome", nullable = false ,updatable = false)
     private String nome;
+
+    @Column(name = "cpf", nullable = false ,updatable = false)
     private String cpf;
+
+    @Column(name = "data_nascimento", nullable = false ,updatable = false)
     private Date dataNascimento;
+
+    @Column(name = "sexo", nullable = false ,updatable = false)
     private Integer sexo;
 
     // getters e setters

@@ -1,11 +1,28 @@
 package br.com.senai.model.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Produto {
-    // atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false ,updatable = false)
     private Integer id;
+
+    @Column(name = "nome", nullable = false)
     private String nome;
+
+    @Column(name = "preco", nullable = false)
     private Double preco;
+
+    @Column(name = "quantidade", nullable = false)
     private Number quantidade;
+
+    @Column(name = "descricao", nullable = false)
     private String descricao;
 
     // getters e setters

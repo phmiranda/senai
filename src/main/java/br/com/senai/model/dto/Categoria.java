@@ -1,6 +1,10 @@
 package br.com.senai.model.dto;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Categoria {
@@ -9,8 +13,10 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false ,updatable = false)
     private Long id;
+
     @Column(name = "nome", nullable = false)
     private String nome;
+
     @Column(name = "descricao", nullable = true)
     private String descricao;
 

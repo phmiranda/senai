@@ -1,12 +1,31 @@
 package br.com.senai.model.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Endereco {
-    // atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, updatable = false)
     private Integer id;
+
+    @Column(name = "endereco", nullable = false)
     private String endereco;
+
+    @Column(name = "completo", nullable = false)
     private String complemento;
+
+    @Column(name = "numero", nullable = false)
     private String numero;
+
+    @Column(name = "cidade", nullable = false)
     private String cidade;
+
+    @Column(name = "cep", nullable = false)
     private String cep;
 
     // getters e setters
