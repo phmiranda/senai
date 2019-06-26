@@ -1,4 +1,4 @@
-package br.com.senai.model;
+package br.com.senai.dao;
 
 public class UsuarioDaoTest {
     public static void main(String[] args) {
