@@ -1,4 +1,4 @@
-package br.com.senai.dao;
+package test.dao;
 
 import br.com.senai.model.dto.Usuario;
 
