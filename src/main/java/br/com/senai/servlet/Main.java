@@ -1,4 +1,4 @@
-package br.com.senai.web;
+package br.com.senai.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
