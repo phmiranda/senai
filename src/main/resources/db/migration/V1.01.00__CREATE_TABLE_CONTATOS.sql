@@ -1,7 +1,6 @@
 CREATE TABLE contatos(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-    email VARCHAR(100) NOT NULL ,
-    celular VARCHAR(11) NOT NULL ,
-    telefone VARCHAR(10) NULL ,
-    recado VARCHAR(11) NULL
+    celular VARCHAR(14) NOT NULL ,
+    telefone VARCHAR(14) NULL ,
+    recado VARCHAR(14) NULL
 );

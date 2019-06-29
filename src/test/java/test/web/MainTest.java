@@ -1,4 +1,4 @@
-package test.servlet;
+package test.web;
 
 import br.com.senai.servlet.Main;
 
