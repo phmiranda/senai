@@ -1,4 +1,4 @@
-package test.dao;
+package test;
 
 import br.com.senai.model.dto.Usuario;
 
@@ -7,7 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.Date;
 
-public class UsuarioDaoTest {
+public class UsuarioTest {
     public static void main(String[] args) {
         // instancia um objeto do tipo @usuario
         Usuario usuario = new Usuario();

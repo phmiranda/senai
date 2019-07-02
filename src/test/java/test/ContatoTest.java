@@ -1,6 +1,6 @@
-package test.dao;
+package test;
 
-public class ContatoDaoTest {
+public class ContatoTest {
     public static void main(String[] args) {
         // instancia um objeto do tipo @entidade
         // seta os valores para os atributos

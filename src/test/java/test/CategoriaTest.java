@@ -1,4 +1,4 @@
-package test.dao;
+package test;
 
 import br.com.senai.model.dto.Categoria;
 
@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class CategoriaDaoTest {
+public class CategoriaTest {
     public static void main(String[] args) {
         // instancia um objeto do tipo @categoria
         Categoria categoria = new Categoria();

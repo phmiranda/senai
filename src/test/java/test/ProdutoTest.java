@@ -1,6 +1,6 @@
-package test.dao;
+package test;
 
-public class UnidadeFederativaDaoTest {
+public class ProdutoTest {
     // instancia um objeto do tipo @entidade
     // seta os valores para os atributos
     // cria uma entidade de gerenciamento para persistências
