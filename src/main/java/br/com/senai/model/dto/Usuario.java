@@ -1,12 +1,8 @@
 package br.com.senai.model.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Calendar;
 import java.util.Date;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "usuarios")
@@ -23,7 +19,8 @@ public class Usuario {
     private String cpf;
 
     @Column(name = "data_nascimento", nullable = false ,updatable = false)
-    private Date dataNascimento;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Calendar dataNascimento;
 
     @Column(name = "sexo", nullable = false ,updatable = false)
     private Integer sexo;
@@ -53,11 +50,11 @@ public class Usuario {
         this.cpf = cpf;
     }
 
-    public Date getDataNascimento() {
+    public Calendar getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(Calendar dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

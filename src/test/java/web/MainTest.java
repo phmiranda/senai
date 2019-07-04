@@ -1,7 +1,7 @@
 package web;
 
-import br.com.senai.rest.Main;
+import br.com.senai.web.Servidor;
 
-public class MainTest extends Main {
+public class MainTest extends Servidor {
 
 }
