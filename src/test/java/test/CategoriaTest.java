@@ -16,16 +16,16 @@ public class CategoriaTest {
         categoria.setDescricao("N/A");
 
         // cria uma entidade de gerenciamento para persistências
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("senai");
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("senai");
+        EntityManager em = emf.createEntityManager();
 
         // inicia transação para persistência de dados
-        entityManager.getTransaction().begin();
-        entityManager.persist(categoria);
-        entityManager.getTransaction().commit();
+        em.getTransaction().begin();
+        em.persist(categoria);
+        em.getTransaction().commit();
 
         // finaliza o gerenciamento das entidades
-        entityManager.close();
-        entityManagerFactory.close();
+        em.close();
+        emf.close();
     }
 }

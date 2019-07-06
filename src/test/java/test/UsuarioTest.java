@@ -15,7 +15,6 @@ public class UsuarioTest {
         // seta os valores para os atributos
         usuario.setNome("Pedro Henrique França Marques Miranda");
         usuario.setCpf("04325469109");
-        usuario.setDataNascimento("");
         usuario.setSexo(1);
 
         // cria uma entidade de gerenciamento para persistências
