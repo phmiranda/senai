@@ -18,7 +18,7 @@ public class Endereco {
     @Column(name = "endereco", nullable = false)
     private String endereco;
 
-    @Column(name = "completo", nullable = false)
+    @Column(name = "complemento", nullable = false)
     private String complemento;
 
     @Column(name = "numero", nullable = false)
