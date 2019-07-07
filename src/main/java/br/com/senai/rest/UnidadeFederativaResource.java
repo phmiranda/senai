@@ -1,4 +1,4 @@
-package br.com.senai.resource;
+package br.com.senai.rest;
 
 public class UnidadeFederativaResource {
 }

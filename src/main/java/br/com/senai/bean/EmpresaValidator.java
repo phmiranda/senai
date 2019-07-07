@@ -1,6 +1,6 @@
 package br.com.senai.bean;
 
-public class EmpresaRest {
+public class EmpresaValidator {
     public static void main(String[] args) {
 
     }
