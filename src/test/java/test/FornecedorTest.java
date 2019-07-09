@@ -1,7 +1,7 @@
 package test;
 
 import br.com.senai.model.dto.Fornecedor;
-import br.com.senai.util.AbstractEntity;
+import br.com.senai.config.AbstractEntity;
 
 import javax.persistence.EntityManager;
 

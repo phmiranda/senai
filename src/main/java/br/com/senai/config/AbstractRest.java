@@ -1,4 +1,4 @@
-package br.com.senai.util;
+package br.com.senai.config;
 
 public class AbstractRest {
 

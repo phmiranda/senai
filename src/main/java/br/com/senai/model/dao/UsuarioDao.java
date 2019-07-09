@@ -1,9 +1,6 @@
 // pacote de persistência de dados da classe: @Categoria
 package br.com.senai.model.dao;
 
-import br.com.senai.model.dto.Usuario;
-import br.com.senai.util.AbstractEntity;
-
 public class UsuarioDao {
     // comentário
     public void salvar(){

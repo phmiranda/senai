@@ -1,4 +1,4 @@
-package br.com.senai.util;
+package br.com.senai.config;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

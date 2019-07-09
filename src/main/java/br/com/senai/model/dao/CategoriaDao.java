@@ -1,7 +1,7 @@
 package br.com.senai.model.dao;
 
 import br.com.senai.model.dto.Categoria;
-import br.com.senai.util.AbstractEntity;
+import br.com.senai.config.AbstractEntity;
 
 import javax.persistence.EntityManager;
 
