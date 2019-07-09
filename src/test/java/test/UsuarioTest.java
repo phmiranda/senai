@@ -1,11 +1,9 @@
 package test;
 
 import br.com.senai.model.dto.Usuario;
-import br.com.senai.model.util.AbstractEntity;
+import br.com.senai.util.AbstractEntity;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 public class UsuarioTest {
     public static void main(String[] args) {

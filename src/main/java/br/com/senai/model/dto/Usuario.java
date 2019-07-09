@@ -1,5 +1,7 @@
 package br.com.senai.model.dto;
 
+import com.google.gson.Gson;
+
 import javax.persistence.*;
 import java.util.Calendar;
 import java.util.Date;
@@ -64,5 +66,10 @@ public class Usuario {
 
     public void setSexo(Integer sexo) {
         this.sexo = sexo;
+    }
+
+    // converte objeto para formato json
+    public String toJson(){
+        return new Gson().toJson(this);
     }
 }

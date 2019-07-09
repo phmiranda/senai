@@ -1,10 +1,9 @@
 package test;
 
 import br.com.senai.model.dto.Produto;
+import br.com.senai.util.AbstractEntity;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 public class ProdutoTest {
     public static void main(String[] args) {
@@ -17,9 +16,8 @@ public class ProdutoTest {
         produto.setQuantidade(250);
         produto.setDescricao("N/A");
 
-        // cria uma entidade de gerenciamento para persistências
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("senai");
-        EntityManager em = emf.createEntityManager();
+        // comentário
+        EntityManager em = new AbstractEntity().getEntityManager();
 
         // inicia transação para persistência de dados
         em.getTransaction().begin();
@@ -28,6 +26,5 @@ public class ProdutoTest {
 
         // finaliza o gerenciamento das entidades
         em.close();
-        emf.close();
     }
 }

@@ -1,9 +1,12 @@
 // pacote de persistência de dados da classe: @Categoria
 package br.com.senai.model.dao;
 
+import br.com.senai.model.dto.Usuario;
+import br.com.senai.util.AbstractEntity;
+
 public class UsuarioDao {
     // comentário
-    public void create(){
+    public void salvar(){
         System.out.println("Executando query na base de dados...");
     }
 
@@ -18,7 +21,7 @@ public class UsuarioDao {
     }
 
     // comentário
-    public void findAll(){
+    public void findAll(Long id){
         System.out.println("Executando query na base de dados...");
     }
     // comentário

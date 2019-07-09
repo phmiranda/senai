@@ -1,32 +1,17 @@
 package br.com.senai.model.dao;
 
+import br.com.senai.model.dto.Categoria;
+import br.com.senai.util.AbstractEntity;
+
+import javax.persistence.EntityManager;
+
 public class CategoriaDao {
-    // comentário
-    public void create(){
-        System.out.println("Executando query na base de dados...");
-    }
-
-    // comentário
-    public void edit(){
-        System.out.println("Executando query na base de dados...");
-    }
-
-    // comentário
-    public void delete(){
-        System.out.println("Executando query na base de dados...");
-    }
-
-    // comentário
-    public void findAll(){
-        System.out.println("Executando query na base de dados...");
-    }
-    // comentário
-    public void findById(){
-        System.out.println("Executando query na base de dados...");
-    }
-
-    // comentário
-    public void findByName(){
-        System.out.println("Executando query na base de dados...");
+    public String index(String categorias){
+        Categoria categoria = new Categoria();
+        EntityManager em = new AbstractEntity().getEntityManager();
+        em.getTransaction().begin();
+        em.find(Categoria.class, categoria.getId());
+        em.getTransaction().commit();
+        return categorias;
     }
 }
